@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .translate, .rotate, .scalex, .scaley, .skewx, .skewy, .matrix{
+            width: 200px;
+            height: 100px;
+            border: 1px solid;
+            
+        }
+        .translate{
+            background-color: violet;
+            transform: translate(205px);
+        }
+        .rotate{
+            background-color: thistle;
+            transform: rotate(10deg);
+        }
+        .scalex{
+            background-color: turquoise;
+            transition: transform 2s ease-in-out 0.2s;
+        }
+        .scalex:hover{
+            transform: scale(1.5);
+        }
+        .scaley{
+            background-color: wheat;
+            transition: transform 2s ease-out .1s;
+        }
+        .scaley:hover{
+            transform: scaleY(2);
+        }
+        .skewx{
+            background-color: tan;
+        }
+        .skewy{
+            background-color:steelblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="translate">
+        <h1> Translate </h1>
+    </div>
+    <div class="rotate">
+        <h1>Rotate</h1>
+    </div>
+    <div class="scalex">
+        <h1>ScaleX</h1>
+    </div>
+    <div class="scaley">
+        <h1>scaleY</h1>
+    </div>
+    <div class="skewx">
+        <h1>skewX</h1>
+    </div>
+    <div class="skewy">
+        <h1>skewY</h1>
+    </div>
+    <div class="matrix">
+        <h1> matrix</h1>
+    </div>
+    <div class="extra">
+        <h1>Extra</h1>
+    </div>
+</body>
+</html>
